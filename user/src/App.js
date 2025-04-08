@@ -16,6 +16,7 @@ function App() {
   useEffect(() => {
     axios.get('http://localhost:8000/api/current-user/')
       .then(response => {
+        console.log('Current user data:', response.data);  // Log data for debugging
         setCurrentUser(response.data);
       })
       .catch(error => {

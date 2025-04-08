@@ -6,6 +6,16 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 from rest_framework.authentication import SessionAuthentication
 
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework.permissions import IsAuthenticated
+
+class CurrentUser(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        return Response({'username': request.user.username})
+
 class CsrfExemptSessionAuthentication(SessionAuthentication):
     def enforce_csrf(self, request):
         # Simply do not perform the CSRF check.
