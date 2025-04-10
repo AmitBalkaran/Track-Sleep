@@ -2,6 +2,18 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## To run the program
+
+Start the backend server with
+
+### `python manage.py runserver`
+
+Then do `cd user` and then run `npm start`
+
+## If it gives you an error
+
+Run `npm install` and then `npm start`
+
 ## Available Scripts
 
 In the project directory, you can run:
