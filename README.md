@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started with Sleep Tracker React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -13,6 +13,9 @@ Then do `cd user` and then run `npm start`
 ## If it gives you an error
 
 Run `npm install` and then `npm start`
+
+## On Home page
+Scroll down to see menue
 
 ## Available Scripts
 
